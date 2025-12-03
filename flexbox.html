@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            width: 1000px;
+            background-color: aqua;
+            border: 1px solid black;
+            justify-content:center;
+            align-items:center;
+            column-gap: 10px;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+            align-content: center;
+            flex-grow: 1;
+        }
+        .item2{
+            order: -1;
+            /* to change the order of child items */
+            flex-grow: 2;
+            /* flex grow is used to grow or incresase any single part as well as give each child eaual area to grow */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+    </div>
+</body>
+</html>

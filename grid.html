@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+             /* height: 400px;
+            width: 1000px;  */
+            background-color: aqua;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr); 
+            /* grid-template-areas: "header header header header""main main . sidebar""footer footer footer footer";*/
+            justify-items: center;
+            align-items: center;
+            /* place-content:center ;  */
+            /* place items is combination of justify items and align item */
+        
+        }
+       .item{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            align-content: center;
+            
+        }
+        /* .item1{
+             grid-area: header; 
+        }
+        .item2{
+             grid-area: main; 
+        }
+        .item3{
+             grid-area: sidebar; 
+        }
+        .item4{
+            grid-area: footer; 
+        } */
+    </style>
+</head>
+<body>
+    <!-- grid is 2-d layout while flex is a 1-d one -->
+    <div class="container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+    </div>
+</body>
+</html>
